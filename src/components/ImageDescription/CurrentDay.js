@@ -4,7 +4,7 @@ const CurrentDay = (props) => {
 
   return (
     <div>
-      <p>{props.day}</p>
+      <p className="current-day">{props.day}</p>
     </div>
   );
 };

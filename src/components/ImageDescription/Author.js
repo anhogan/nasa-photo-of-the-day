@@ -4,7 +4,7 @@ const Author = (props) => {
 
   return (
     <div>
-      <p>{props.author}</p>
+      <p className="author">{props.author}</p>
     </div>
   );
 };
