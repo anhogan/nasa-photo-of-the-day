@@ -1,6 +1,6 @@
 import React from "react";
 
-const DaySelector = () => {
+const CurrentDay = () => {
 
   return (
     <div>
@@ -9,4 +9,4 @@ const DaySelector = () => {
   );
 };
 
-export default DaySelector;
+export default CurrentDay;
