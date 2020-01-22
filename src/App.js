@@ -18,7 +18,7 @@ function App() {
       .catch(error => {
         console.log(error.message)
       });
-  });
+  }, []);
   
   // useEffect(() => {
   //   const fetchData = () => {
@@ -39,7 +39,7 @@ function App() {
     <div className="App">
       <Header />
       <ImageDescription data={data}/>
-      <Photo />
+      <Photo data={data}/>
       <DaySelector />
     </div>
   );
