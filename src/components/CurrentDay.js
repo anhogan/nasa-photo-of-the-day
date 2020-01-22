@@ -1,10 +1,10 @@
 import React from "react";
 
-const CurrentDay = () => {
+const CurrentDay = (props) => {
 
   return (
     <div>
-
+      {/* <p>{props.data.date}</p> */}
     </div>
   );
 };
