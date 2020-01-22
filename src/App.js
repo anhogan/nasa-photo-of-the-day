@@ -10,19 +10,19 @@ function App() {
   const [data, setData] = useState("");
   const [query, setQuery] = useState("");
 
-  useEffect(() => {
-    axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
-      .then(response => {
-        setData(response.data);
-      })
-      .catch(error => {
-        console.log(error.message)
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+  //     .then(response => {
+  //       setData(response.data);
+  //     })
+  //     .catch(error => {
+  //       console.log(error.message)
+  //     });
+  // }, []);
   
   // useEffect(() => {
   //   const fetchData = () => {
-  //     axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+  //     axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY$date=${query}')
   //     .then( response => {
   //       console.log(response.data);
   //       setData(response.data);
@@ -40,7 +40,7 @@ function App() {
       <Header />
       <ImageDescription data={data}/>
       <Photo data={data}/>
-      <DaySelector />
+      <DaySelector query={query}/>
     </div>
   );
 }

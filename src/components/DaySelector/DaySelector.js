@@ -6,7 +6,9 @@ const DaySelector = () => {
 
   return (
     <div>
+      <h4>Choose a Different Day</h4>
       <GenerateDay />
+      <button><strong>Show Me the Image!</strong></button>
     </div>
   );
 };
