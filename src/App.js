@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import Header from './components/Header/Header';
-import CurrentDay from './components/ImageDescription/CurrentDay';
+import ImageDescription from './components/ImageDescription/ImageDescription';
 import Photo from './components/PhotoComponents/Photo';
 import DaySelector from './components/DaySelector/DaySelector';
 import "./App.css";
@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <CurrentDay />
+      <ImageDescription />
       <Photo />
       <DaySelector />
     </div>
