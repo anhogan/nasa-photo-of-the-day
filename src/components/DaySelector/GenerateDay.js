@@ -3,9 +3,9 @@ import React from 'react';
 const GenerateDay = () => {
   return (
     <div className="date-input-container">
-      <input type="text" name="Year" placeholder="Year" /><br />
-      <input type="text" name="Month" placeholder="Month" /><br />
-      <input type="text" name="Day" placeholder="Day" /><br />
+      <input type="text" name="year" placeholder="Year (YYYY)" /><br />
+      <input type="text" name="month" placeholder="Month (MM)" /><br />
+      <input type="text" name="day" placeholder="Day (DD)" /><br />
     </div>
   );
 }
