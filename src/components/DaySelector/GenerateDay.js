@@ -2,12 +2,14 @@ import React from 'react';
 
 const GenerateDay = () => {
   return (
-    <div>
+    <div className="generate-day-container">
       <h4>Choose a Different Day</h4>
-      <input type="text" name="Year" value="Year" /><br />
-      <input type="text" name="Month" value="Month" /><br />
-      <input type="text" name="Day" value="Day" /><br />
-      <button>Show Me the Image!</button>
+      <div className="date-input-container">
+        <input type="text" name="Year" placeholder="Year" /><br />
+        <input type="text" name="Month" placeholder="Month" /><br />
+        <input type="text" name="Day" placeholder="Day" /><br />
+      </div>
+      <button><strong>Show Me the Image!</strong></button>
     </div>
   );
 }

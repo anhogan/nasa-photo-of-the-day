@@ -1,0 +1,23 @@
+.date-input-container {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  margin: 1%;
+}
+
+button {
+  background: #163A8D;
+  color: #E94D30;
+  width: 12.5%;
+  height: 25px;
+  border-radius: 25px;
+  margin-top: 1%;
+  font-family: 'Righteous', cursive;
+}
+
+h4 {
+  margin-bottom: 1%;
+  font-family: 'Righteous', cursive;
+}
