@@ -7,22 +7,38 @@ import DaySelector from './components/DaySelector/DaySelector';
 import "./App.css";
 
 function App() {
-  const [photo, setPhoto] = useState("");
-  
+  const [data, setData] = useState("");
+  const [query, setQuery] = useState("");
+
   useEffect(() => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
-      .then( response => {
-        console.log(response.data);
+      .then(response => {
+        setData(response.data);
       })
       .catch(error => {
         console.log(error.message)
       });
   });
+  
+  // useEffect(() => {
+  //   const fetchData = () => {
+  //     axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+  //     .then( response => {
+  //       console.log(response.data);
+  //       setData(response.data);
+  //     })
+  //     .catch(error => {
+  //       console.log(error.message)
+  //     });
+  //   }
+
+  //   fetchData();
+  // }, [query]);
 
   return (
     <div className="App">
       <Header />
-      <ImageDescription />
+      <ImageDescription data={data}/>
       <Photo />
       <DaySelector />
     </div>

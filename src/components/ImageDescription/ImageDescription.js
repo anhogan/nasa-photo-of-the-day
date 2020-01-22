@@ -7,9 +7,9 @@ const ImageDescription = (props) => {
 
   return (
     <div>
-      <Title />
-      <Author />
-      <CurrentDay />
+      <Title title={props.data.title}/>
+      <Author author={props.data.copyright}/>
+      <CurrentDay day={props.data.date}/>
     </div>
   );
 };

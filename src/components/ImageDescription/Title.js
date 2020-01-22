@@ -4,7 +4,7 @@ const Title = (props) => {
 
   return (
     <div>
-      {/* <p>{props.data.date}</p> */}
+      <p>{props.title}</p>
     </div>
   );
 };

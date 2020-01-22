@@ -4,7 +4,7 @@ const Author = (props) => {
 
   return (
     <div>
-      {/* <p>{props.data.date}</p> */}
+      <p>{props.author}</p>
     </div>
   );
 };
