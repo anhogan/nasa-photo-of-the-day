@@ -20,27 +20,22 @@ function App() {
       });
   }, []);
   
-  // useEffect(() => {
-  //   const fetchData = () => {
-  //     axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY$date=${query}')
-  //     .then( response => {
-  //       console.log(response.data);
-  //       setData(response.data);
-  //     })
-  //     .catch(error => {
-  //       console.log(error.message)
-  //     });
-  //   }
-
-  //   fetchData();
-  // }, [query]);
+  const fetchData = () => {
+    axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${query}`)
+    .then(response => {
+      setData(response.data);
+    })
+    .catch(error => {
+      console.log(error.message)
+    });
+  };
 
   return (
     <div className="App">
       <Header />
       <ImageDescription data={data}/>
       <Photo data={data}/>
-      <DaySelector query={query}/>
+      <DaySelector query={query} setQuery={setQuery} fetchData={fetchData} />
     </div>
   );
 }
