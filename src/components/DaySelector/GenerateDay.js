@@ -15,9 +15,24 @@ const GenerateDay = (props) => {
 
   return (
     <div className="date-input-container">
-      <input type="text" name="year" placeholder="Year (YYYY)" onChange={handleYearChange} /><br />
-      <input type="text" name="month" placeholder="Month (MM)" onChange={handleMonthChange} /><br />
-      <input type="text" name="day" placeholder="Day (DD)" onChange={handleDayChange} /><br />
+      <input 
+        type="text" 
+        name="year"
+        value={props.year} 
+        placeholder="Year (YYYY)" 
+        onChange={handleYearChange} /><br />
+      <input 
+        type="text" 
+        name="month" 
+        value={props.month}
+        placeholder="Month (MM)" 
+        onChange={handleMonthChange} /><br />
+      <input 
+        type="text" 
+        name="day" 
+        value={props.day}
+        placeholder="Day (DD)" 
+        onChange={handleDayChange} /><br />
     </div>
   );
 }

@@ -16,15 +16,23 @@ const DaySelector = (props) => {
 
     props.setQuery(`${newYear}-${newMonth}-${newDay}`);
     props.fetchData();
+
+    setYear('');
+    setMonth('');
+    setDay('');
   }
 
   return (
     <div>
-      <form onSubmit={selectorString}>
-        <h4>Choose a Different Day</h4>
-        <GenerateDay setYear={setYear} setMonth={setMonth} setDay={setDay} />
-        <button><strong>Show Me the Image!</strong></button>
-      </form>
+      <h4>Choose a Different Day</h4>
+      <GenerateDay 
+        year={year}
+        month={month}
+        day={day}
+        setYear={setYear} 
+        setMonth={setMonth} 
+        setDay={setDay} />
+      <button onSubmit={selectorString}><strong>Show Me the Image!</strong></button>
     </div>
   );
 };
