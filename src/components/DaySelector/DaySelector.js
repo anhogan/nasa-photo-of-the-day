@@ -15,7 +15,7 @@ const DaySelector = (props) => {
     <div>
       <h4>Choose a Different Day</h4>
       <GenerateDay />
-      <button onClick={selectorString()}><strong>Show Me the Image!</strong></button>
+      <button onClick={selectorString}><strong>Show Me the Image!</strong></button>
     </div>
   );
 };
