@@ -17,6 +17,10 @@ button {
   font-family: 'Righteous', cursive;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 h4 {
   margin-bottom: 1%;
   font-family: 'Righteous', cursive;
